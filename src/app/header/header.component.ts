@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from "@angular/router"; 
 
 @Component({
   selector: 'app-header',
@@ -11,5 +12,19 @@ export class HeaderComponent {
   toggleNavbarCollapsing() {
       this.navbarCollapsed = !this.navbarCollapsed;
   }
+
+  isloggedin=false;
+  constructor( private router:Router) { 
+ 
+    if(localStorage.getItem('Loginuser')){
+      this.isloggedin=true;
+    }
+  } 
+  onLogout() {  
+    localStorage.removeItem('Loginuser');
+    this.isloggedin = false;  
+    this.router.navigate(['/']);
+  } 
+ 
 
 }
