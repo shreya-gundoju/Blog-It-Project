@@ -1,61 +1,69 @@
-
 <section class="featured-blog mtb-40">
-    <div class="container">
+  <div class="widget left-widget categories">
+    <h2 class="widget-title">Popular Categories</h2>
+    <ul>
+       <li><a class="nav-link" routerLink="/tech" routerLinkActive="active">Technology </a></li>
+       <li><a class="nav-link" routerLink="/health" routerLinkActive="active">Health and Wellness</a></li>
+       <li><a class="nav-link" routerLink="/music" routerLinkActive="active">Music</a></li>
+       <li><a class="nav-link" routerLink="/history" routerLinkActive="active">History and Culture </a></li>
+       <li><a class="nav-link" routerLink="/sports" routerLinkActive="active">Sports</a></li>
+       <li><a class="nav-link" routerLink="/travel" routerLinkActive="active">Travel </a></li>
+       <li><a class="nav-link" routerLink="/food" routerLinkActive="active">Food </a></li>
+       <li><a class="nav-link" routerLink="/finance" routerLinkActive="active">Personal Finance </a></li>
+   </ul>
+  </div>
+  <div *ngIf="router.url=='/'">
+  <div class="container">
       <div class="row">
-          <h2 class="title-heading">Latest Articles</h2>
+        <h2 class="title-heading">Latest Articles</h2>
         <div class="col-md-4">
           <div class="blog-box">
-            <img src="assets/images/img1.jpg" alt="blog1">
-            <h3>Breaking the Chains: Challenging Patriarchy in the 21st Century</h3>
+            <img src="assets/images/img1.jpg" alt="blog1" />
+            <h3>
+              Breaking the Chains: Challenging Patriarchy in the 21st Century
+            </h3>
             <p>by <span>Shreya Kaur</span></p>
-            <p>Patriarchy, a deeply ingrained social system where power and authority are predominantly held by men, has persisted for centuries. While significant strides have been made towards gender equality, the vestiges of patriarchy still loom large in our society. This multifaceted...</p>            <a href="#" class="btn btn-primary">Read more...</a>
+            <p>
+              Patriarchy, a deeply ingrained social system where power and
+              authority are predominantly held by men, has persisted for
+              centuries. While significant strides have been made towards gender
+              equality, the vestiges of patriarchy still loom large in our
+              society. This multifaceted...
+            </p>
+            <a href="/articles/1" class="btn btn-primary"
+              >Read more...</a
+            >
           </div>
         </div>
         <div class="col-md-4">
           <div class="blog-box">
-            <img src="assets/images/img2.jpg" alt="blog1">
-            <h3> The Evolution of Pop Music in India</h3>
+            <img src="assets/images/img2.jpg" alt="blog1" />
+            <h3>The Evolution of Pop Music in India</h3>
             <p>by <span>Mahesh Khundra</span></p>
-            <p>Pop music in India has undergone a remarkable transformation over the years, reflecting the nation's diverse cultural tapestry and changing tastes. What was once dominated by Bollywood melodies and classical compositions has now embraced a contemporary sound that...</p>
-            <a href="#" class="btn btn-primary">Read more...</a>
+            <p>
+              Pop music in India has undergone a remarkable transformation over
+              the years, reflecting the nation's diverse cultural tapestry and
+              changing tastes. What was once dominated by Bollywood melodies and
+              classical compositions has now embraced a contemporary sound
+              that...
+            </p>
+            <a href="/articles/2" class="btn btn-primary">Read more...</a>
           </div>
-        </div> 
+        </div>
         <div class="col-md-4">
           <div class="blog-box">
-            <img src="assets/images/img3.jpg" alt="post1">
+            <img src="assets/images/img3.jpg" alt="post1" />
             <h3>The AI Takeover Debate: Separating Fact from Fiction</h3>
             <p>by <span>Gauri Khan</span></p>
-            <p>The notion of artificial intelligence (AI) taking over the world is a topic that has intrigued, and sometimes frightened, people for decades. While science fiction has often portrayed a dystopian future where AI rules with an iron fist, the reality is... </p>
-            <a href="detail.html" class="btn btn-primary">Read more...</a>
+            <p>
+              The notion of artificial intelligence (AI) taking over the world
+              is a topic that has intrigued, and sometimes frightened, people
+              for decades. While science fiction has often portrayed a dystopian
+              future where AI rules with an iron fist, the reality is...
+            </p>
+            <a href="articles/3" class="btn btn-primary">Read more...</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="blog-box">
-            <img src="assets/images/img4.jpg" alt="post2">
-            <h3> Ancient Indian Fashion: Elegance Through the Ages</h3>
-            <p>by <span>Kusum Iyengar</span></p>
-            <p>Ancient Indian fashion stands as a testament to the rich cultural heritage and artistic sensibilities that have thrived on the Indian subcontinent for millennia. Across different periods and regions, Indian clothing has embodied both opulence...</p>
-            <a href="detail.html" class="btn btn-primary">Read more...</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog-box">
-            <img src="assets/images/img5.jpg" alt="post3">
-            <h3>Prioritizing Mental Health Post-COVID: A Vital Imperative</h3>
-            <p>by <span>Raghav Srivastan</span></p>
-            <p>The COVID-19 pandemic has left an indelible mark on the world, impacting not only physical health but also the mental well-being of millions. As we emerge from the pandemic's grip, the importance of mental health has never been more... </p>
-            <a href="detail.html" class="btn btn-primary">Read more...</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog-box">
-            <img src="assets/images/img6.jpg" alt="post4">
-            <h3>The Power of Hobbies in Day-to-Day Life</h3>
-            <p>by <span>Gauri Khan</span></p>
-            <p>Hobbies are not just pastimes; they are an essential component of a fulfilling life. In the hustle and bustle of our daily routines, hobbies offer a respite, bringing joy and balance to our lives.One of the most remarkable aspects of hobbies is...</p>
-            <a href="detail.html" class="btn btn-primary">Read more...</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>      
+
+  

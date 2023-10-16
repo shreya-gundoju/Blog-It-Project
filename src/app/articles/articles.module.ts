@@ -7,6 +7,15 @@ import { LatestArticlesComponent } from './latest-articles/latest-articles.compo
 import { FeaturedArticlesComponent } from './featured-articles/featured-articles.component';
 import { CategoriesComponent } from './categories/categories.component';
 
+import { MusicComponent } from './music/music.component';
+import { HistoryComponent } from './history/history.component';
+import { HealthComponent } from './health/health.component';
+import { TechComponent } from './tech/tech.component';
+import { SportsComponent } from './sports/sports.component';
+import { FinanceComponent } from './finance/finance.component';
+import { FoodComponent } from './food/food.component';
+import { TravelComponent } from './travel/travel.component';
+
 
 @NgModule({
   declarations: [
@@ -14,12 +23,25 @@ import { CategoriesComponent } from './categories/categories.component';
     ArticleDetailsComponent,
     LatestArticlesComponent,
     FeaturedArticlesComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    MusicComponent,
+    HistoryComponent,
+    HealthComponent,
+    TechComponent,
+    SportsComponent,
+    FinanceComponent,
+    FoodComponent,
+    TravelComponent
   ],
   imports: [
     CommonModule,
     ArticlesRoutingModule
   ],
-  exports:[LatestArticlesComponent]
+  exports:[LatestArticlesComponent, 
+    MusicComponent,
+    HistoryComponent,
+    HealthComponent,
+    TechComponent
+  ]
 })
 export class ArticlesModule { }

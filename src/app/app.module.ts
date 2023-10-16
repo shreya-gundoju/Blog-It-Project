@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ArticlesModule } from './articles/articles.module';
 import { StaticpagesModule } from './staticpages/staticpages.module';
 
@@ -18,7 +17,6 @@ import { StaticpagesModule } from './staticpages/staticpages.module';
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +26,7 @@ import { StaticpagesModule } from './staticpages/staticpages.module';
     AccountModule,
     AppRoutingModule,
   ],
-  providers: [AccountserviceService],
-  bootstrap: [AppComponent]
+  providers: [ AccountserviceService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
